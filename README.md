@@ -35,6 +35,7 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [AddChannelBody](docs/AddChannelBody.md)
+ - [ChannelResponse](docs/ChannelResponse.md)
  - [ChannelsResponse](docs/ChannelsResponse.md)
  - [GetTelegramChatIdBody](docs/GetTelegramChatIdBody.md)
  - [NotifyBody](docs/NotifyBody.md)

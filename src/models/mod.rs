@@ -1,5 +1,7 @@
 pub mod add_channel_body;
 pub use self::add_channel_body::AddChannelBody;
+pub mod channel_response;
+pub use self::channel_response::ChannelResponse;
 pub mod channels_response;
 pub use self::channels_response::ChannelsResponse;
 pub mod get_telegram_chat_id_body;

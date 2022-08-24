@@ -3,6 +3,7 @@
 Cargo.toml
 README.md
 docs/AddChannelBody.md
+docs/ChannelResponse.md
 docs/ChannelsResponse.md
 docs/CrateApi.md
 docs/GetTelegramChatIdBody.md
@@ -14,6 +15,7 @@ src/apis/crate_api.rs
 src/apis/mod.rs
 src/lib.rs
 src/models/add_channel_body.rs
+src/models/channel_response.rs
 src/models/channels_response.rs
 src/models/get_telegram_chat_id_body.rs
 src/models/mod.rs
