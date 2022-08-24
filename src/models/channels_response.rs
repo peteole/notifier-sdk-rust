@@ -12,21 +12,18 @@
 
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
-pub struct AddChannelBody {
-    #[serde(rename = "service_id")]
-    pub service_id: String,
-    #[serde(rename = "service_username")]
-    pub service_username: String,
+pub struct ChannelsResponse {
     #[serde(rename = "user_id")]
     pub user_id: String,
+    #[serde(rename = "channels")]
+    pub channels: Vec<crate::models::ChannelResponse>,
 }
 
-impl AddChannelBody {
-    pub fn new(service_id: String, service_username: String, user_id: String) -> AddChannelBody {
-        AddChannelBody {
-            service_id,
-            service_username,
+impl ChannelsResponse {
+    pub fn new(user_id: String, channels: Vec<crate::models::ChannelResponse>) -> ChannelsResponse {
+        ChannelsResponse {
             user_id,
+            channels,
         }
     }
 }

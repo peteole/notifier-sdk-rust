@@ -16,7 +16,7 @@ Method | HTTP request | Description
 > handle_add_channel(add_channel_body)
 Add channel
 
-Add channel  Remove notification channel for user 
+Add channel  Add notification channel for user 
 
 ### Parameters
 
@@ -73,7 +73,7 @@ No authorization required
 
 ## handle_notify
 
-> handle_notify(send_notification_body)
+> handle_notify(notify_body)
 Send notification
 
 Send notification  send notification to user with given id on all channels registered for that user 
@@ -83,7 +83,7 @@ Send notification  send notification to user with given id on all channels regis
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**send_notification_body** | [**SendNotificationBody**](SendNotificationBody.md) |  | [required] |
+**notify_body** | [**NotifyBody**](NotifyBody.md) |  | [required] |
 
 ### Return type
 
