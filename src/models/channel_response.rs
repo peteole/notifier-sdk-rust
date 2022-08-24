@@ -13,17 +13,17 @@
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ChannelResponse {
-    #[serde(rename = "service_username")]
-    pub service_username: String,
     #[serde(rename = "service_id")]
     pub service_id: String,
+    #[serde(rename = "service_username")]
+    pub service_username: String,
 }
 
 impl ChannelResponse {
-    pub fn new(service_username: String, service_id: String) -> ChannelResponse {
+    pub fn new(service_id: String, service_username: String) -> ChannelResponse {
         ChannelResponse {
-            service_username,
             service_id,
+            service_username,
         }
     }
 }
