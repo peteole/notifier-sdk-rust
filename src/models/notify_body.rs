@@ -15,18 +15,18 @@
 pub struct NotifyBody {
     #[serde(rename = "user_id")]
     pub user_id: String,
-    #[serde(rename = "message")]
-    pub message: String,
     #[serde(rename = "subject")]
     pub subject: String,
+    #[serde(rename = "message")]
+    pub message: String,
 }
 
 impl NotifyBody {
-    pub fn new(user_id: String, message: String, subject: String) -> NotifyBody {
+    pub fn new(user_id: String, subject: String, message: String) -> NotifyBody {
         NotifyBody {
             user_id,
-            message,
             subject,
+            message,
         }
     }
 }

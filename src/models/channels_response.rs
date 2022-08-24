@@ -13,17 +13,17 @@
 
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ChannelsResponse {
-    #[serde(rename = "user_id")]
-    pub user_id: String,
     #[serde(rename = "channels")]
     pub channels: Vec<crate::models::ChannelResponse>,
+    #[serde(rename = "user_id")]
+    pub user_id: String,
 }
 
 impl ChannelsResponse {
-    pub fn new(user_id: String, channels: Vec<crate::models::ChannelResponse>) -> ChannelsResponse {
+    pub fn new(channels: Vec<crate::models::ChannelResponse>, user_id: String) -> ChannelsResponse {
         ChannelsResponse {
-            user_id,
             channels,
+            user_id,
         }
     }
 }

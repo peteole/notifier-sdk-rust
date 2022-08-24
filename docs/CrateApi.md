@@ -5,6 +5,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**handle_add_channel**](CrateApi.md#handle_add_channel) | **POST** /add_channel | Add channel
+[**handle_get_channels**](CrateApi.md#handle_get_channels) | **GET** /notify/get_channels/{user_id} | Get notification channels for user
 [**handle_get_telegram_chat_id**](CrateApi.md#handle_get_telegram_chat_id) | **POST** /get_telegram_chat_id | Get the chat ID of a telegram username
 [**handle_notify**](CrateApi.md#handle_notify) | **POST** /notify | Send notification
 [**handle_remove_channel**](CrateApi.md#handle_remove_channel) | **POST** /remove_channel | Remove channel
@@ -37,6 +38,36 @@ No authorization required
 
 - **Content-Type**: application/json
 - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## handle_get_channels
+
+> crate::models::ChannelsResponse handle_get_channels(user_id)
+Get notification channels for user
+
+Get notification channels for user  get all channels registered for user with given id 
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**user_id** | **String** | User id to get notification channels for | [required] |
+
+### Return type
+
+[**crate::models::ChannelsResponse**](ChannelsResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
